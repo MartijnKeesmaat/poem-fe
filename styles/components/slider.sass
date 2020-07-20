@@ -1,5 +1,8 @@
 .slide-pagination
-    position: fixed
+    display: none !important
+
+.slide-pagination
+    position: absolute
     right: -322px
     bottom: 66px
 
@@ -57,3 +60,37 @@
         font-family: EmpiricaHead
         font-size: 13px
         line-height: 18px
+
+.reveal
+    overflow: hidden
+
+.reveal span
+    display: block
+
+    transform: translateY(120%)
+
+.slider-pagination__item:nth-child(2) .slide-pagination__loader
+    height: 91%
+
+    background: #babaa6a6
+
+.slide-pagination__loader
+    position: absolute
+    top: 0
+    top: -44px
+    left: -11px
+
+    width: 100%
+    height: 100%
+
+    transform: scaleX(0)
+
+    border-radius: 6px
+    background: #a6a8baa6
+
+// .slider-pagination__item:first-child
+.slide-pagination__loader
+    display: block
+
+.slide-pagination
+    overflow: hidden
