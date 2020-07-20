@@ -8,10 +8,10 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Jost-Medium";
+  font-family: "Jost-Bold";
   font-weight: 500;
   font-style: normal;
-  src: url("../assets/fonts/Jost-Medium.woff") format("woff");
+  src: url("../assets/fonts/Jost-Bold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -35,7 +35,7 @@ body {
   --color-border: rgba(182, 182, 182, 0.4);
   --voyage: "Voyage", serif;
   --jost: "Jost", Arial, Sans-Serif;
-  --jost-medium: "Jost-Medium", Arial, Sans-Serif;
+  --jost-bold: "Jost-Medium", Arial, Sans-Serif;
   --lora: "Lora", serif;
   --transition1: 0.28s all ease;
 }
@@ -340,7 +340,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: 4.8rem;
+  opacity: 0.9;
+  color: #020000;
+  text-shadow: 0 2px 42px rgba(0, 0, 0, 0.1);
+  font-family: var(--voyage);
+  font-size: 7.9rem;
+  line-height: 71px;
 }
 
 h3,
@@ -353,16 +358,16 @@ h3,
 
 h4,
 .h4 {
+  font-family: var(--lora);
   font-size: 2.7rem;
 }
 
 h5,
 .h5 {
-  text-align: center;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--color-secundary-dark);
-  font-family: var(--jost-medium);
+  font-family: var(--jost-bold);
   font-size: 1rem;
   line-height: 20px;
 }
@@ -410,6 +415,30 @@ ul.transition {
   background: #fff;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4.5rem 1.1rem 4.5rem;
+  text-align: center;
+  letter-spacing: 2.55px;
+  text-transform: uppercase;
+  color: #000000;
+  color: #fff;
+  border: none;
+  background: rgba(26, 24, 18, 0.9);
+  font-family: var(--jost-bold);
+  font-size: 10px;
+  line-height: 20px;
+}
+.btn span {
+  margin: 0;
+  margin-right: 0.8rem;
+}
+.btn img {
+  width: 6px;
+  height: 6px;
+}
+
 #intro {
   position: relative;
   display: flex;
@@ -443,7 +472,6 @@ ul.transition {
   letter-spacing: -0.32px;
   opacity: 0.6;
   color: #F2E0DA;
-  font-family: Jost-Book;
   font-size: 15px;
 }
 .main-nav a:first-child {
@@ -462,7 +490,6 @@ ul.transition {
   color: #F2E0DA;
   border: none;
   background: none;
-  font-family: Jost-Book;
   font-size: 15px;
 }
 .lang-nav button:first-child {
@@ -635,6 +662,83 @@ ul.transition {
   left: 0;
   margin: 0 auto;
   transform: translateY(-50%);
+}
+
+.stylist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15.7rem 4rem;
+  background: var(--color-bg2);
+}
+
+.stylist__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1086px;
+  margin: 0 auto;
+}
+
+.stylist__text h5 {
+  margin-bottom: 1.9rem;
+  opacity: 1;
+  color: #000;
+}
+.stylist__text h2 {
+  max-width: 33.2rem;
+  margin-top: 0;
+  margin-bottom: 4.6rem;
+}
+.stylist__text p {
+  max-width: 260px;
+  margin-top: 0;
+  margin-bottom: 4.2rem;
+  letter-spacing: -0.75px;
+  opacity: 0.9;
+  color: #020000;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.stylist__img {
+  display: flex;
+}
+.stylist__img .stylist__img-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 2.9rem;
+}
+.stylist__img .stylist__img-column:last-child {
+  margin-right: 0;
+}
+.stylist__img .stylist__img-column img {
+  width: 291px;
+  height: 430px;
+  object-fit: cover;
+}
+.stylist__img .stylist__img-column:last-child img {
+  height: 400px;
+}
+
+.stylist__note {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.stylist__note h4 {
+  letter-spacing: -0.6px;
+  color: #38363E;
+  font-size: 16px;
+}
+.stylist__note p {
+  max-width: 203px;
+  letter-spacing: -0.55px;
+  opacity: 0.7;
+  color: #020000;
+  font-size: 11px;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
