@@ -846,7 +846,8 @@ ul.transition {
   display: block;
   margin-bottom: 3rem;
 }
-.consultant-pre .large-quote {
+
+.large-quote {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -854,10 +855,11 @@ ul.transition {
   margin: 0 auto;
   text-align: center;
 }
-.consultant-pre .h0 {
+.large-quote .h0 {
   margin-bottom: 6rem;
+  padding: 0 30px;
 }
-.consultant-pre small {
+.large-quote small {
   text-align: center;
   letter-spacing: -0.7px;
   opacity: 0.6;
@@ -865,6 +867,19 @@ ul.transition {
   font-family: var(--lora);
   font-size: 16px;
   line-height: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .large-quote .h0 {
+    margin-bottom: 4rem;
+    font-size: 70px;
+    line-height: 0.9;
+  }
+}
+@media screen and (max-width: 550px) {
+  .large-quote {
+    padding: 0 15px;
+    font-size: 40px;
+  }
 }
 
 .consultant {
@@ -952,6 +967,51 @@ ul.transition {
   justify-content: center;
 }
 
+@media screen and (max-width: 1150px) {
+  .consultant__img1 {
+    width: 100%;
+  }
+
+  .consultant-side {
+    display: none;
+  }
+
+  .consultant {
+    justify-content: center;
+  }
+
+  .consultant__main {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .consultant {
+    position: relative;
+    bottom: -5rem;
+    margin-bottom: -17rem;
+  }
+
+  .consultant__img2 {
+    display: none;
+  }
+
+  .consultant__main {
+    position: relative;
+    top: -30px;
+  }
+
+  .consultant__main-text {
+    justify-content: flex-start;
+    padding: 40px;
+  }
+
+  .consultant__img1 {
+    display: block;
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
+  }
+}
 .contact {
   display: flex;
   max-width: 100%;
@@ -1053,7 +1113,7 @@ input, textarea {
   line-height: 26px;
 }
 input::placeholder, textarea::placeholder {
-  color: rgba(58, 54, 63, 0.6);
+  color: rgba(58, 54, 63, 0.3);
 }
 
 .contact-backdrop {
@@ -1067,6 +1127,81 @@ input::placeholder, textarea::placeholder {
   background: var(--color-bg3);
 }
 
+@media screen and (max-width: 1200px) {
+  .contact__img {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group__item label {
+    margin-bottom: 0.4rem;
+  }
+
+  .form-group__item input {
+    margin-bottom: 1.8rem;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  .contact-backdrop {
+    height: 110%;
+  }
+
+  .contact__img {
+    height: 802px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__img {
+    position: relative;
+    bottom: -30px;
+    width: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-width: 430px;
+    height: 400px;
+    height: 400px;
+    max-height: 530px;
+    padding: 30px;
+    padding: 40px;
+    object-fit: cover;
+    object-fit: cover;
+  }
+
+  .contact__text {
+    align-items: flex-start;
+    padding: 40px;
+  }
+
+  .form-group {
+    flex-direction: row;
+  }
+
+  .contact {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .form-group {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  textarea {
+    max-width: 280px;
+  }
+}
 .footer {
   position: relative;
   display: flex;
@@ -1119,6 +1254,9 @@ input::placeholder, textarea::placeholder {
 .insta-feed {
   display: flex;
 }
+.insta-feed a:first-child img {
+  filter: grayscale(0);
+}
 .insta-feed img {
   width: 86.75px;
   margin-right: 27px;
@@ -1126,7 +1264,6 @@ input::placeholder, textarea::placeholder {
   filter: grayscale(100%);
 }
 .insta-feed img:hover {
-  transform: rotate(5deg);
   filter: grayscale(0);
 }
 
@@ -1159,6 +1296,27 @@ input::placeholder, textarea::placeholder {
   margin-left: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .insta-feed {
+    flex-direction: column;
+  }
+  .insta-feed img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+}
 .detail-view {
   display: flex;
 }
