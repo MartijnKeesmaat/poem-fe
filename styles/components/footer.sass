@@ -1,0 +1,104 @@
+.footer
+    position: relative
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    padding: 5rem 3rem
+
+    background: var(--color-bg2)
+
+    &:before
+        position: absolute
+        top: -9px
+
+        width: 100%
+        height: 5px
+
+        content: ''
+
+        background: var(--color-bg2)
+
+    h3, .footer-col h3 a
+        margin: 0
+        margin-bottom: 0.5rem
+
+        opacity: 0.9
+        color: #000000
+        text-shadow: 0 2px 42px rgba(0,0,0,0.10)
+
+        font-family: var(--voyage)
+        font-size: 29px
+        line-height: 63px
+
+.footer-col
+    p, a
+        letter-spacing: -0.43px
+
+        opacity: 0.8
+        color: #3A363F
+
+        font-size: 16px
+        line-height: 26px
+
+    p a
+        text-decoration: underline
+
+.footer-inner
+    display: flex
+    justify-content: space-between
+
+    width: 100%
+    max-width: 1252px
+
+    p
+        margin: 0
+        margin-bottom: 0.5rem
+
+.insta-feed
+    display: flex
+
+    img
+        width: 86.75px
+        margin-right: 27px
+
+        transition: .3s all ease
+
+        filter: grayscale(100%)
+
+        &:hover
+            transform: rotate(5deg)
+
+            filter: grayscale(0)
+
+.footer-nav
+    display: flex
+    flex-direction: column
+
+    a
+        transition: .3s
+        letter-spacing: -0.43px
+
+        opacity: 0.8
+        color: #3A363F
+
+        font-size: 16px
+
+        &:hover
+            opacity: .4
+    span
+        margin-right: 3%
+
+        letter-spacing: -0.21px
+
+        opacity: 0.8
+        color: #3A363F
+
+        font-size: 8px
+
+.footer h3 img
+    width: 7px
+    height: 7px
+    margin-bottom: 3.5px
+    margin-left: 5px
