@@ -1,5 +1,27 @@
-.slide-pagination
-    display: none !important
+.slides
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+
+    width: 100vw
+    height: 100vh
+
+    .slide
+        position: absolute
+
+        visibility: hidden
+
+        width: 100%
+        height: 100%
+
+        opacity: 0
+        background-size: cover
+
+        &:first-child
+            visibility: visible
+
+            opacity: 1
 
 .slide-pagination
     position: absolute
@@ -48,7 +70,6 @@
         opacity: 0.5
         color: #000000
 
-        font-family: HelveticaNeue-Bold, sans-serif
         font-size: 8px
 
     h4
@@ -57,7 +78,7 @@
         opacity: 0.7
         color: #000000
 
-        font-family: EmpiricaHead
+        font-family: var(--voyage)
         font-size: 13px
         line-height: 18px
 
